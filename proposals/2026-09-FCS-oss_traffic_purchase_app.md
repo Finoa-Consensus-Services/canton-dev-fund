@@ -171,7 +171,7 @@ The request covers twelve weeks of build and audit, the M4 feasibility verdict, 
 
 ### Volatility Stipulation
 
-Fixed USD at approval: M1 USD 47,800, M2 USD 39,900, M3 USD 68,250, **M4 USD 25,050** (\~EUR 23,200), each M5 month USD 6,825 (total USD 222,000). CC recomputed from 30-day CoinGecko moving average at milestone submission ([\#262](https://github.com/canton-foundation/canton-dev-fund/pull/262) pattern). Quarterly M5 reassessment optional per [\#47](https://github.com/canton-foundation/canton-dev-fund/pull/47)/[\#50](https://github.com/canton-foundation/canton-dev-fund/pull/50) terms.
+Project duration is estimated at approximately 9.5 months. Should the timeline extend beyond 9 months due to Committee-requested scope changes, any remaining milestones will be renegotiated to account for significant USD/CC price volatility.
 
 **M4 effort basis:** partner outreach (Stripe and onramp contacts), product consolidation, and internal legal support for the verdict document. M4 is funded at EUR 20,000–25,000 scale; roughly half of the build hours originally earmarked for M3 partner-outreach overlap move to M4, with the remainder retained in M3 for audit remediation and the v1.0 MainNet release..
 
