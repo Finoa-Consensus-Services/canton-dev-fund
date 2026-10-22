@@ -44,7 +44,7 @@ Open source reference app for validator bootstrap and traffic recovery: calculat
 - **Three-wallet test:** FCS tests the app with three different wallets from three non-custodial wallet providers; each wallet completes a traffic purchase for a validator on TestNet (M2) and MainNet (M3); results published in a compatibility matrix (including which purchase path was used)  
 - External audit, 1.0 release (M3)  
 - M4 Stripe/onramp feasibility verdict (go / no-go / conditional go); **2 to 4 weeks** including Stripe and onramp partner outreach  
-- M5.1 to M5.6: post-release maintenance (protocol-compat patches, wallet-matrix updates, bug fixes, docs); monthly maintenance reports; jurisdiction controls per M1 legal memo  
+- M5.1 to M5.6: post-release maintenance (protocol-compat patches, wallet-matrix updates, bug fixes, docs) and Canton Foundation adoption (the Foundation buying traffic using the FCS-operated implementation); monthly maintenance reports; jurisdiction controls per M1 legal memo  
 - Operator and deployment guide; internal security review
 
 **Out of scope**
@@ -91,7 +91,7 @@ All dates from grant approval. Grant closes on **M5.6** (\~38 weeks: 12 weeks bu
 | M2 [CIP-0103](https://github.com/canton-foundation/cips/blob/main/cip-0103/cip-0103.md) flow, three-wallet test (TestNet) | Week 6 |
 | M3 Audit, 1.0, MainNet release | Week 12 |
 | M4 Stripe/onramp feasibility verdict | Weeks 13 to 16 post-release (2 to 4 weeks) |
-| M5.1 to M5.6 Monthly maintenance | Months 1 to 6 post-release |
+| M5.1 to M5.6 Adoption and monthly maintenance | Months 1 to 6 post-release |
 
 ### Milestone 1
 
@@ -104,7 +104,7 @@ All dates from grant approval. Grant closes on **M5.6** (\~38 weeks: 12 weeks bu
 
 - End-to-end TestNet purchase via `prepareExecute` using the Token Standard transfer path if deployed, otherwise `BuyMemberTraffic`; `MemberTraffic` referenced; traffic balance re-read  
 - FCS completes a traffic purchase through the app with each of three different wallets (from three wallet providers); matrix published (wallet, provider, environment, target validator, purchase path used, pass/fail)  
--   
+- TestNet instance operated by FCS available for the Canton Foundation to buy validator traffic on TestNet  
 - [CIP-0103](https://github.com/canton-foundation/cips/blob/main/cip-0103/cip-0103.md) error paths (4001, 4200); internal security review; E2E suite in CI
 
 ### Milestone 3
@@ -129,7 +129,7 @@ All dates from grant approval. Grant closes on **M5.6** (\~38 weeks: 12 weeks bu
 
 ### Milestones 5.1 to 5.6
 
-Each month FCS delivers a maintenance report within five business days of month end: tagged patches, changelog against splice [\#7255](https://github.com/canton-foundation/canton-dev-fund/pull/7255) / [CIP-0107](https://github.com/canton-foundation/cips/blob/main/cip-0107/cip-0107.md), wallet-matrix diffs, and fixed issues. Partial payment on acceptance. Late or rejected report pauses that month only. A MainNet reference instance is kept current so each release is exercised against live AmuletRules, Scan, and wallet behaviour before it is tagged.
+FCS operates the reference implementation and supports the Canton Foundation in using it to buy traffic. **M5.1** includes the adoption gate: the Canton Foundation completes **3 MainNet traffic purchases** through the FCS-operated implementation. Only MainNet purchases count. Each month FCS delivers a maintenance report within five business days of month end: on-chain usage summary, tagged patches, changelog against splice [\#7255](https://github.com/canton-foundation/canton-dev-fund/pull/7255) / [CIP-0107](https://github.com/canton-foundation/cips/blob/main/cip-0107/cip-0107.md), wallet-matrix diffs, and fixed issues. Partial payment on acceptance. Late or rejected report pauses that month only. A MainNet reference instance is kept current so each release is exercised against live AmuletRules, Scan, and wallet behaviour before it is tagged.
 
 ---
 
@@ -148,7 +148,8 @@ Scope changes that require architectural rework beyond this document pause the a
 - Committee member completes TestNet purchase from fresh clone with repo docs and a listed [CIP-0103](https://github.com/canton-foundation/cips/blob/main/cip-0103/cip-0103.md) wallet  
 - Audit report public; zero open Critical or High findings  
 - FCS demonstrates a successful traffic purchase with each of three different wallets on TestNet and MainNet  
-- M5 reports list tagged releases and compatibility patches
+- Canton Foundation completes 3 MainNet traffic purchases through the FCS-operated implementation (M5.1)  
+- M5 reports list on-chain usage, tagged releases, and compatibility patches
 
 ---
 
